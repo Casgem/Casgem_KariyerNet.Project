@@ -14,6 +14,6 @@ namespace Casgem_DTOLayer.DTOs.Concrete.CompanyDTOs
         public string Website { get; set; }
         public string LinkedinUrl { get; set; }
         public int DegreeId { get; set; }
-        public List<Degree> Degrees { get; set; }
+       
     }
 }

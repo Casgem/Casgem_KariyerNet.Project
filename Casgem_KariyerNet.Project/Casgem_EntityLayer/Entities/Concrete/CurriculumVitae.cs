@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Casgem_EntityLayer.Entities.Concrete
 {
-    //İş ilanı Entity'si
+    //İş ilanı Entity'si //Is arayan CV
     public class CurriculumVitae : IEntity
     {
         public int CurriculumVitaeId { get; set; }

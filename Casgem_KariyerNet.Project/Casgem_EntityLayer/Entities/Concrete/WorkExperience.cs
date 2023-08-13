@@ -17,5 +17,6 @@ namespace Casgem_EntityLayer.Entities.Concrete
         public DateTime EndDate { get; set; }
         public int JobAdvertisementId { get; set; }
         public JobAdvertisement JobAdvertisement { get; set; }
+
     }
 }

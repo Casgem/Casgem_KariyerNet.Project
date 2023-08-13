@@ -13,16 +13,7 @@ namespace Casgem_BusinessLayer.Concrete
             _companyDal = companyDal;
         }
 
-        public Company GetCompanyWithDegree(int id)
-        {
-            return _companyDal.GetCompanyWithDegree(id);
-        }
-
-        public List<Company> GetCompanyWithDegrees()
-        {
-            return _companyDal.GetCompanyWithDegrees();
-        }
-
+      
         public void TDelete(Company t)
         {
             _companyDal.Delete(t);

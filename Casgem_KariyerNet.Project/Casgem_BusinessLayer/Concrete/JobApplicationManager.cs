@@ -13,9 +13,9 @@ namespace Casgem_BusinessLayer.Concrete
             _jobApplicationDal = jobApplicationDal;
         }
 
-        public JobApplication GetJobApplicationWithEmployer(int id)
+        public JobApplication GetJobApplicationWithUser(int id)
         {
-            return _jobApplicationDal.GetJobApplicationWithEmployer(id);
+            return _jobApplicationDal.GetJobApplicationWithUser(id);
         }
 
         public JobApplication GetJobApplicationWithJobAdvertisement(int id)
@@ -23,10 +23,6 @@ namespace Casgem_BusinessLayer.Concrete
             return _jobApplicationDal.GetJobApplicationWithJobAdvertisement(id);
         }
 
-        public JobApplication GetJobApplicationWithJobSeeker(int id)
-        {
-            return _jobApplicationDal.GetJobApplicationWithJobSeeker(id);
-        }
 
         public void TDelete(JobApplication t)
         {

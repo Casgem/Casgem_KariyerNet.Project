@@ -20,28 +20,5 @@ namespace Casgem_DataAccessLayer.Concrete.EntityFramework
             _context = context;
         }
 
-        public void AddCompanyForDegree(int companyId, Degree degree)
-        {
-            var value = _context.Companies.Where(company => company.CompanyId == companyId).FirstOrDefault();
-            value.Degrees.Add(degree);
-            _context.SaveChanges();
-        }
-
-        public void AddCompanyForDegrees(int companyId, List<Degree> degrees)
-        {
-            var value = _context.Companies.Where(company => company.CompanyId == companyId).FirstOrDefault();
-            degrees.ForEach(degree => value.Degrees.Add(degree));
-            _context.SaveChanges();
-        }
-
-        public Company GetCompanyWithDegree(int id)
-        {
-            return _context.Companies.Include(company => company.Degrees).Where(company => company.CompanyId == id).FirstOrDefault();
-        }
-
-        public List<Company> GetCompanyWithDegrees()
-        {
-            return _context.Companies.Include(company => company.Degrees).ToList();
-        }
     }
 }

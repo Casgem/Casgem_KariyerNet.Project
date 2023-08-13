@@ -11,7 +11,7 @@ namespace Casgem_DataAccessLayer.Abstract
     public interface IJobApplicationDal : IGenericDal<JobApplication>
     {
         public JobApplication GetJobApplicationWithJobAdvertisement(int id);
-        public JobApplication GetJobApplicationWithJobSeeker(int id);
-        public JobApplication GetJobApplicationWithEmployer(int id);
+        public JobApplication GetJobApplicationWithUser(int id);
+  
     }
 }

@@ -16,11 +16,10 @@ namespace Casgem_DTOLayer.DTOs.Concrete.EmployerDTOs
         public int AppUserId { get; set; } //bir iş veren üye olan kullanıcı ile 1'e 1 ilişkili.
         public AppUser AppUser { get; set; } //bir iş veren üye olan kullanıcı ile 1'e 1 ilişkili.
         //public int EmployerJobAdvertisementSearchHistoryId { get; set; }//iş veren geçmişi 1'e çok ilişkili.
-        public List<EmployerJobAdvertisementSearchHistory> EmployerJobAdvertisementSearchHistory { get; set; }
+        
         //public int JobAdvertisementId { get; set; } //iş veren iş ilanlarına 1'e çok ilişkili.
         public List<JobAdvertisement> JobAdvertisements { get; set; } //iş verenin yayınladığı birden fazla iş ilanı var.
 
-        //public int DegreeId { get; set; } //bir iş verenin birden fazla ünvanı olabilir.
-        public List<Degree> Degrees { get; set; }
+      
     }
 }

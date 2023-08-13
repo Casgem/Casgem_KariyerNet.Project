@@ -10,7 +10,7 @@ namespace Casgem_BusinessLayer.Abstract
     public interface IJobApplicationService : IGenericService<JobApplication>
     {
         public JobApplication GetJobApplicationWithJobAdvertisement(int id);
-        public JobApplication GetJobApplicationWithJobSeeker(int id);
-        public JobApplication GetJobApplicationWithEmployer(int id);
+        public JobApplication GetJobApplicationWithUser(int id);
+   
     }
 }

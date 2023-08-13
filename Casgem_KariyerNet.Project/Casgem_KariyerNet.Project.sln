@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Casgem_DTOLayer", "Casgem_D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Casgem_EntityLayer", "Casgem_EntityLayer\Casgem_EntityLayer.csproj", "{BC99F773-CDEF-4926-B535-1B7288128634}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casgem_CoreLayer", "Casgem_CoreLayer\Casgem_CoreLayer.csproj", "{DF447319-25E9-472D-AA66-440B28ED8CC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Casgem_CoreLayer", "Casgem_CoreLayer\Casgem_CoreLayer.csproj", "{DF447319-25E9-472D-AA66-440B28ED8CC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casgem_PresentationLayer", "Casgem_PresentationLayer\Casgem_PresentationLayer.csproj", "{C2F3D886-EB46-4F0B-B850-2AFEAA461FEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{DF447319-25E9-472D-AA66-440B28ED8CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF447319-25E9-472D-AA66-440B28ED8CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF447319-25E9-472D-AA66-440B28ED8CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F3D886-EB46-4F0B-B850-2AFEAA461FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F3D886-EB46-4F0B-B850-2AFEAA461FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F3D886-EB46-4F0B-B850-2AFEAA461FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F3D886-EB46-4F0B-B850-2AFEAA461FEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

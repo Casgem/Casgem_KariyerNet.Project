@@ -32,26 +32,22 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ICompanyDal, EfCompanyDal>();
 builder.Services.AddScoped<ICurriculumVitaeDal, EfCurriculumVitaeDal>();
-builder.Services.AddScoped<IDegreeDal, EfDegreeDal>();
 builder.Services.AddScoped<IEducationInformationDal, EfEducationInformationDal>();
-builder.Services.AddScoped<IEmployerDal, EfEmployerDal>();
-builder.Services.AddScoped<IEmployerJobAdvertisementSearchHistoryDal, EfEmployerJobAdvertisementSearchHistoryDal>();
+builder.Services.AddScoped<IUserDal, EfUserDal>();
+
 builder.Services.AddScoped<IJobAdvertisementDal, EfJobAdvertisementDal>();
 builder.Services.AddScoped<IJobApplicationDal, EfJobApplicationDal>();
-builder.Services.AddScoped<IJobSeekerDal, EfJobSeekerDal>();
-builder.Services.AddScoped<IJobSeekerJobAdvertisementSearchHistoryDal, EfJobSeekerJobAdvertisementSearchHistoryDal>();
+
 builder.Services.AddScoped<IWorkExperienceDal, EfWorkExperienceDal>();
 
 builder.Services.AddScoped<ICompanyService, CompanyManager>();
 builder.Services.AddScoped<ICurriculumVitaeService, CurriculumVitaeManager>();
-builder.Services.AddScoped<IDegreeService, DegreeManager>();
 builder.Services.AddScoped<IEducationInformationService, EducationInformationManager>();
-builder.Services.AddScoped<IEmployerService, EmployerManager>();
-builder.Services.AddScoped<IEmployerJobAdvertisementSearchHistoryService, EmployerJobAdvertisementSearchHistoryManager>();
+builder.Services.AddScoped<IUserService, UserManager>();
+
 builder.Services.AddScoped<IJobAdvertisementService, JobAdvertisementManager>();
 builder.Services.AddScoped<IJobApplicationService, JobApplicationManager>();
-builder.Services.AddScoped<IJobSeekerService, JobSeekerManager>();
-builder.Services.AddScoped<IJobSeekerJobAdvertisementSearchHistoryService, JobSeekerJobAdvertisementSearchHistoryManager>();
+
 builder.Services.AddScoped<IWorkExperienceService, WorkExperienceManager>();
 
 var app = builder.Build();

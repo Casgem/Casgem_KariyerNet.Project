@@ -3,16 +3,16 @@ using Casgem_DTOLayer.DTOs.Concrete.AppUserDTOs;
 using Casgem_DTOLayer.DTOs.Concrete.CompanyDTOs;
 using Casgem_DTOLayer.DTOs.Concrete.CreateJobSeekerDTOs;
 using Casgem_DTOLayer.DTOs.Concrete.CurriculumVitaeDTOs;
-using Casgem_DTOLayer.DTOs.Concrete.DegreeDTOs;
 using Casgem_DTOLayer.DTOs.Concrete.DeleteJobSeekerDTOs;
 using Casgem_DTOLayer.DTOs.Concrete.EducationInformationDTOs;
 using Casgem_DTOLayer.DTOs.Concrete.EmployerDTOs;
-using Casgem_DTOLayer.DTOs.Concrete.EmployerJobAdvertisementSearchHistoryDTOs;
+
 using Casgem_DTOLayer.DTOs.Concrete.JobAdvertisementDTOs;
 using Casgem_DTOLayer.DTOs.Concrete.JobApplicationDTOs;
-using Casgem_DTOLayer.DTOs.Concrete.JobSeekerJobAdvertisementSearchHistoryDTOs;
+
 using Casgem_DTOLayer.DTOs.Concrete.SelectJobSeekerDTOs;
 using Casgem_DTOLayer.DTOs.Concrete.UpdateJobSeekerDTOs;
+using Casgem_DTOLayer.DTOs.Concrete.UserDTOs;
 using Casgem_DTOLayer.DTOs.Concrete.WorkExperienceDTOs;
 using Casgem_EntityLayer.Entities.Concrete;
 
@@ -22,15 +22,9 @@ namespace Casgem_APILayer.Mapping
     {
         public GeneralMapping()
         {
-            CreateMap<Employer, CreateEmployerDTO>().ReverseMap();
-            CreateMap<Employer, SelectEmployerDTO>().ReverseMap();
-            CreateMap<Employer, UpdateEmployerDTO>().ReverseMap();
-            CreateMap<Employer, DeleteEmployerDTO>().ReverseMap();
-
-            CreateMap<JobSeeker, CreateJobSeekerDTO>().ReverseMap();
-            CreateMap<JobSeeker, SelectJobSeekerDTO>().ReverseMap();
-            CreateMap<JobSeeker, UpdateJobSeekerDTO>().ReverseMap();
-            CreateMap<JobSeeker, DeleteJobSeekerDTO>().ReverseMap();
+            CreateMap<User, CreateUserDTO>().ReverseMap();
+            CreateMap<User, SelectUserDTO>().ReverseMap();
+            CreateMap<User, UpdateUserDTO>().ReverseMap();
 
             CreateMap<AppUser, CreateAppUserDTO>().ReverseMap();
             CreateMap<AppUser, SelectAppUserDTO>().ReverseMap();
@@ -47,20 +41,15 @@ namespace Casgem_APILayer.Mapping
             CreateMap<CurriculumVitae, UpdateCurriculumVitaeDTO>().ReverseMap();
             CreateMap<CurriculumVitae, DeleteCurriculumVitaeDTO>().ReverseMap();
 
-            CreateMap<Degree, CreateDegreeDTO>().ReverseMap();
-            CreateMap<Degree, SelectDegreeDTO>().ReverseMap();
-            CreateMap<Degree, UpdateDegreeDTO>().ReverseMap();
-            CreateMap<Degree, DeleteDegreeDTO>().ReverseMap();
-
             CreateMap<EducationInformation, CreateEducationInformationDTO>().ReverseMap();
             CreateMap<EducationInformation, SelectEducationInformationDTO>().ReverseMap();
             CreateMap<EducationInformation, UpdateEducationInformationDTO>().ReverseMap();
             CreateMap<EducationInformation, DeleteEducationInformationDTO>().ReverseMap();
 
-            CreateMap<EmployerJobAdvertisementSearchHistory, CreateEmployerJobAdvertisementSearchHistoryDTO>().ReverseMap();
-            CreateMap<EmployerJobAdvertisementSearchHistory, SelectEmployerJobAdvertisementSearchHistoryDTO>().ReverseMap();
-            CreateMap<EmployerJobAdvertisementSearchHistory, UpdateEmployerJobAdvertisementSearchHistoryDTO>().ReverseMap();
-            CreateMap<EmployerJobAdvertisementSearchHistory, DeleteEmployerJobAdvertisementSearchHistoryDTO>().ReverseMap();
+            //CreateMap<EmployerJobAdvertisementSearchHistory, CreateEmployerJobAdvertisementSearchHistoryDTO>().ReverseMap();
+            //CreateMap<EmployerJobAdvertisementSearchHistory, SelectEmployerJobAdvertisementSearchHistoryDTO>().ReverseMap();
+            //CreateMap<EmployerJobAdvertisementSearchHistory, UpdateEmployerJobAdvertisementSearchHistoryDTO>().ReverseMap();
+            //CreateMap<EmployerJobAdvertisementSearchHistory, DeleteEmployerJobAdvertisementSearchHistoryDTO>().ReverseMap();
 
 
             CreateMap<JobAdvertisement, CreateJobAdvertisementDTO>().ReverseMap();
@@ -73,10 +62,10 @@ namespace Casgem_APILayer.Mapping
             CreateMap<JobApplication, UpdateJobApplicationDTO>().ReverseMap();
             CreateMap<JobApplication, DeleteJobApplicationDTO>().ReverseMap();
 
-            CreateMap<JobSeekerJobAdvertisementSearchHistory, CreateJobSeekerJobAdvertisementSearchHistoryDTO>().ReverseMap();
-            CreateMap<JobSeekerJobAdvertisementSearchHistory, SelectJobSeekerJobAdvertisementSearchHistoryDTO>().ReverseMap();
-            CreateMap<JobSeekerJobAdvertisementSearchHistory, UpdateJobSeekerJobAdvertisementSearchHistoryDTO>().ReverseMap();
-            CreateMap<JobSeekerJobAdvertisementSearchHistory, DeleteJobSeekerJobAdvertisementSearchHistoryDTO>().ReverseMap();
+            //CreateMap<JobSeekerJobAdvertisementSearchHistory, CreateJobSeekerJobAdvertisementSearchHistoryDTO>().ReverseMap();
+            //CreateMap<JobSeekerJobAdvertisementSearchHistory, SelectJobSeekerJobAdvertisementSearchHistoryDTO>().ReverseMap();
+            //CreateMap<JobSeekerJobAdvertisementSearchHistory, UpdateJobSeekerJobAdvertisementSearchHistoryDTO>().ReverseMap();
+            //CreateMap<JobSeekerJobAdvertisementSearchHistory, DeleteJobSeekerJobAdvertisementSearchHistoryDTO>().ReverseMap();
 
             CreateMap<WorkExperience, CreateWorkExperienceDTO>().ReverseMap();
             CreateMap<WorkExperience, SelectWorkExperienceDTO>().ReverseMap();

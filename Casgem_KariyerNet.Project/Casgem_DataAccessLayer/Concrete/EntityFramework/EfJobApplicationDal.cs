@@ -20,9 +20,9 @@ namespace Casgem_DataAccessLayer.Concrete.EntityFramework
             _context = context;
         }
 
-        public JobApplication GetJobApplicationWithEmployer(int id)
+        public JobApplication GetJobApplicationWithUser(int id)
         {
-            return _context.JobApplications.Include(jobApplication => jobApplication.Employer).Where(jobApplication => jobApplication.JobApplicationId == id).FirstOrDefault();
+            return _context.JobApplications.Include(jobApplication => jobApplication.User).Where(jobApplication => jobApplication.JobApplicationId == id).FirstOrDefault();
         }
 
         public JobApplication GetJobApplicationWithJobAdvertisement(int id)
@@ -30,9 +30,6 @@ namespace Casgem_DataAccessLayer.Concrete.EntityFramework
             return _context.JobApplications.Include(jobApplication => jobApplication.JobAdvertisement).Where(jobApplication => jobApplication.JobApplicationId == id).FirstOrDefault();
         }
 
-        public JobApplication GetJobApplicationWithJobSeeker(int id)
-        {
-            return _context.JobApplications.Include(jobApplication => jobApplication.JobSeeker).Where(jobApplication => jobApplication.JobApplicationId == id).FirstOrDefault();
-        }
+       
     }
 }
